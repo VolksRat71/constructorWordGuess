@@ -11,3 +11,19 @@
 
 var Letter = require("./Letter.js");
 
+function Word (word){
+    this.word = word;
+    this.wordBreakdown = this.pushArr(word);
+}
+
+Word.prototype.pushArr = function (word){
+    var wordArr = [];
+    for (i = 0; i < word.length; i++){
+        wordArr.push(new Letter(word[i]))
+    }
+    return wordArr;
+};
+
+var newWord = new Word("chevy")
+
+console.log(newWord.wordBreakdown);
