@@ -1,4 +1,4 @@
-// function to take letters from uderlying word and make an individual letter array
+// function to take letters from underlying word and make an individual letter array
 
 //// function that returns a string representing the word. This should call the function
 // on each letter object (the first function defined in `Letter.js`) that displays the 
@@ -8,3 +8,6 @@
 //letter object (the second function defined in `Letter.js`)
 
 //**Hint** THis file should only require "Letter.js"
+
+var Letter = require("./Letter.js");
+
