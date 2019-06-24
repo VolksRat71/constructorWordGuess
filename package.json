@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/VolksRat71/constructorWordGuess/issues"
   },
-  "homepage": "https://github.com/VolksRat71/constructorWordGuess#readme"
+  "homepage": "https://github.com/VolksRat71/constructorWordGuess#readme",
+  "dependencies": {
+    "inquirer": "^6.4.1"
+  }
 }

@@ -25,16 +25,4 @@ Letter.prototype.check = function (guess) {
     } 
 };
 
-// var NewLetter = new Letter("a") 
-
-// console.log(NewLetter.underlying());
-
-// console.log(NewLetter.check("g"));
-
-// console.log(NewLetter.underlying());
-
-// console.log(NewLetter.check("a"));
-
-// console.log(NewLetter.underlying());
-
 module.exports = Letter;

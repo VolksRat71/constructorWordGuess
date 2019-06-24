@@ -4,3 +4,7 @@ var carNames = ["Ford Model T", "Cadillac Type 51", "Ford V8", "Chrysler Airflow
 // function to randomly select word from carNames.arr 
 
 // Prompt user for each guess & keeps track of users remaining guesses
+
+var newWord = carNames[1];
+
+console.log(newWord.wordBreakdown);
