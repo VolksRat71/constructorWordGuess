@@ -1,10 +1,24 @@
+// Constructor initialize
+var Word = require("./word.js");
+var inquirer = require("inquirer");
+
 // Car Name Array
 var carNames = ["Ford Model T", "Cadillac Type 51", "Ford V8", "Chrysler Airflow", "Willys Jeep", "Ford F-Series Pickup", "Chevrolet Tri-Five", "1959 Cadillac", "Chevrolet Corvette Stingray", "Shelby Cobra", "Jeep Wagoneer", "Ford Mustang", "Pontiac GTO", "Lincoln Continental Mark III", "AMC Gremlin", "Cadillac Eldorado", "Chrysler Town & Country", "Dodge Viper", "Ford GT", "Tesla Model S"];
 
-// function to randomly select word from carNames.arr 
+var randomIndex = Math.floor(Math.random() * carNames.length);
+var randomWord = carNames[randomIndex];
 
-// Prompt user for each guess & keeps track of users remaining guesses
+// Pass random word through Word constructor
+computerWord = new Word(randomWord);
 
-var newWord = carNames[1];
+// Array for guessed letters
+var incorrectLetters = [];
+var correctLetters = [];
 
-console.log(newWord.wordBreakdown);
+inquirer.prompt([
+    {
+        type: "input",
+        message: "Guess a letter between A-Z!",
+        name: "userinput"
+    }
+])
