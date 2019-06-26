@@ -1,4 +1,4 @@
-#Constructor Word Guess
+# Constructor Word Guess
 
 This is an appliction designed to to run in a CLI (i.e Windows Powershell, MacOS Terminal, Git Bash).
 
